@@ -18,6 +18,13 @@ body {
   /* Fake image */
   /* Add a card effect for articles */
   /* Right column */
+  /* Clear floats after the columns */
+}
+.container h1 {
+  font-size: 50px;
+}
+.container h2 {
+  color: #800040;
 }
 .container .header {
   padding: 30px;
@@ -25,12 +32,6 @@ body {
   background: white;
   color: #800040;
   font-size: 30px;
-}
-.container .header h1 {
-  font-size: 50px;
-}
-.container h2 {
-  color: #800040;
 }
 .container .topnav {
   overflow: hidden;
@@ -49,6 +50,13 @@ body {
   background-color: #ff80bf;
   color: black;
 }
+.container .active {
+  color: #800040 !important;
+}
+.container form input {
+  border-bottom: 0.5px solid #800040 !important;
+  box-shadow: none !important;
+}
 .container .leftcolumn {
   float: left;
   width: 75%;
@@ -59,9 +67,18 @@ body {
 }
 .container .avatar {
   vertical-align: middle;
-  width: 200px;
-  height: 200px;
+  height: 300px;
   border-radius: 50%;
+}
+.container .cv {
+  background-color: #cc0066;
+  font-size: 1.4em;
+  width: 50%;
+  border: 1px solid black;
+  margin-left: 50%;
+}
+.container .cv a {
+  color: white;
 }
 .container .card {
   background-color: white;
@@ -80,16 +97,30 @@ body {
   width: 25%;
   padding-left: 20px;
 }
-
-/* Clear floats after the columns */
-/*.row:after {
+.container .rightcolumn .card-right-present {
+  background-color: white;
+  padding: 5%;
+  margin-top: 20px;
+  text-align: center;
+}
+.container .rightcolumn .card-right-present img {
+  width: 70%;
+  height: auto;
+}
+.container .rightcolumn .card-right-contact {
+  background-color: white;
+  padding: 5%;
+  margin-top: 20px;
+  text-align: center;
+}
+.container .rightcolumn .card-right-contact a {
+  font-size: 1.5em;
+  color: #800040;
+}
+.container .row:after {
   content: "";
   display: table;
   clear: both;
-}*/
-/* Footer */
-.footer {
-  width: 100%;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

@@ -1,38 +1,38 @@
 body {
-  //background-color: grey;
   font-family: Courier Prime Regular;
   background-image: url("image_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+@mixin card-general{
+  background-color: white;
+  padding: 5%;
+  margin-top: 20px;
+  text-align: center;
+}
+$color: #800040;
 .container {
   max-width: 1024px;
   margin: auto;
   font-size: 18px;
-
+  h1 {
+    font-size: 50px;
+  }
+  h2{
+    color: $color;
+  }
   /* Header/Blog Title */
   .header {
     padding: 30px;
     text-align: center;
     background: white;
-    color: #800040;
-            //blueviolet;
+    color: $color;
     font-size: 30px;
-
   }
-  .header h1 {
-    font-size: 50px;
-  }
-  h2{
-    color: #800040;
-  }
-
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
     background-color: #cc0066;
-            //#7e57c2;
     border-radius: 2%;
     //position: fixed;
   }
@@ -48,8 +48,15 @@ body {
   /* Change color on hover */
   .topnav a:hover {
     background-color: #ff80bf;
-            //#b39ddb;
     color: black;
+  }
+
+  .active{
+    color: $color !important;
+  }
+ form input{
+    border-bottom: 0.5px solid $color !important;
+   box-shadow: none !important;
   }
   /* Create two unequal columns that floats next to each other */
   /* Left column */
@@ -64,16 +71,22 @@ body {
   }
   .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 50%;
+  }
+  .cv{
+    background-color: #cc0066;
+    font-size: 1.4em;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 50%;
+    a{
+      color: white;
+    }
   }
   /* Add a card effect for articles */
   .card {
-    background-color: white;
-    padding: 5%;
-    margin-top: 20px;
-    text-align: center;
+    @include card-general;
     img{
       float: left;
     }
@@ -87,27 +100,30 @@ body {
     width: 25%;
     padding-left: 20px;
     //position: fixed;
+    .card-right-present{
+      @include card-general;
+      img{
+        width: 70%;
+        height: auto;
+      }
+    }
+    .card-right-contact{
+      @include card-general;
+      //border-radius: 5%;
+      //background-color: #ffe6ff;
+      a{
+        font-size: 1.5em;
+        color: $color;
+      }
+    }
   }
-}
 
-
-
-
-
-
-
-
-
-/* Clear floats after the columns */
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
-/* Footer */
-.footer {
-  width: 100%;
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
