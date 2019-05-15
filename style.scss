@@ -50,14 +50,47 @@ $color: #800040;
     background-color: #ff80bf;
     color: black;
   }
+  /* $$$$$$$$$$$$$$$$$$$$$$  Contact $$$$$$$$$$$$$$$$$$$$$$  */
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: $color;
+  }
+  /* label focus color */
+  .input-field input[type=email]:focus + label {
+    color: $color;
+  }
+  /* label focus color */
+  .input-field textarea:focus + label {
+    color: $color;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* label underline focus color */
+  .input-field textarea:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: $color;
+  }
+  /* send color */
+  .send{
+    background-color: $color;
+    color: white;
+    font-family: Courier Prime Regular;
+    border-width: 0 0 0 0;
+  }
 
-  .active{
-    color: $color !important;
-  }
- form input{
-    border-bottom: 0.5px solid $color !important;
-   box-shadow: none !important;
-  }
+
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {
@@ -75,10 +108,10 @@ $color: #800040;
     border-radius: 50%;
   }
   .cv{
-    background-color: #cc0066;
+    background-color: $color;
     font-size: 1.4em;
     width: 50%;
-    border: 1px solid black;
+
     margin-left: 50%;
     a{
       color: white;
@@ -136,8 +169,25 @@ $color: #800040;
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
+  .leftcolumn, .rightcolumn {
+    float: none;
+    width: 100%;
+  }
+
   .topnav a {
     float: none;
     width: 100%;
   }
+  .input-field {
+    width: 100%;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  .card-right-contact{
+    a{
+      font-size: 10px;
+    }
+  }
+
 }

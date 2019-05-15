@@ -13,6 +13,15 @@ body {
   /* Style the top navigation bar */
   /* Style the topnav links */
   /* Change color on hover */
+  /* $$$$$$$$$$$$$$$$$$$$$$  Contact $$$$$$$$$$$$$$$$$$$$$$  */
+  /* label focus color */
+  /* label focus color */
+  /* label focus color */
+  /* label underline focus color */
+  /* label underline focus color */
+  /* label underline focus color */
+  /* icon prefix focus color */
+  /* send color */
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   /* Fake image */
@@ -50,12 +59,35 @@ body {
   background-color: #ff80bf;
   color: black;
 }
-.container .active {
-  color: #800040 !important;
+.container .input-field input[type=text]:focus + label {
+  color: #800040;
 }
-.container form input {
-  border-bottom: 0.5px solid #800040 !important;
-  box-shadow: none !important;
+.container .input-field input[type=email]:focus + label {
+  color: #800040;
+}
+.container .input-field textarea:focus + label {
+  color: #800040;
+}
+.container .input-field input[type=text]:focus {
+  border-bottom: 1px solid #800040;
+  box-shadow: 0 1px 0 0 #800040;
+}
+.container .input-field input[type=email]:focus {
+  border-bottom: 1px solid #800040;
+  box-shadow: 0 1px 0 0 #800040;
+}
+.container .input-field textarea:focus {
+  border-bottom: 1px solid #800040;
+  box-shadow: 0 1px 0 0 #800040;
+}
+.container .input-field .prefix.active {
+  color: #800040;
+}
+.container .send {
+  background-color: #800040;
+  color: white;
+  font-family: Courier Prime Regular;
+  border-width: 0 0 0 0;
 }
 .container .leftcolumn {
   float: left;
@@ -71,10 +103,9 @@ body {
   border-radius: 50%;
 }
 .container .cv {
-  background-color: #cc0066;
+  background-color: #800040;
   font-size: 1.4em;
   width: 50%;
-  border: 1px solid black;
   margin-left: 50%;
 }
 .container .cv a {
@@ -132,9 +163,26 @@ body {
 }
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
+  .leftcolumn, .rightcolumn {
+    float: none;
+    width: 100%;
+  }
+
   .topnav a {
     float: none;
     width: 100%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .card-right-contact a {
+    font-size: 10px;
   }
 }
 

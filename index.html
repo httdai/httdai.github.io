@@ -109,27 +109,28 @@
             <div class="card">
                 <h2>Contact</h2>
                 <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6 " >
+                    <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST">
+                            <div class="input-field col s6" >
                                 <i class="material-icons prefix text-black">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
+                                <input id="icon_prefix" type="text" class="validate" name="name">
                                 <label for="icon_prefix"> Votre nom</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">mail</i>
-                                <input id="email" type="email" class="validate">
+                                <input id="email" type="email" class="validate" name="email">
                                 <label for="email">Votre Email</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                                <label for="icon_prefix2">Votre message</label>
-                                <!--<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>-->
+                                <textarea id="icon_prefix2" class="materialize-textarea" name="sujet"></textarea>
+                                <label for="icon_prefix2">Votre sujet</label>
                             </div>
-
-
-                        </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+                                <label for="icon_prefix2">Votre message</label>
+                            </div>
+                            <input class="send" type="submit" value="Envoyer">
                     </form>
                 </div>
 
