@@ -1,6 +1,6 @@
 body {
   font-family: Courier Prime Regular;
-  background-image: url("image_background.jpeg");
+  //background-image: url("image_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,7 +32,7 @@ $color: #800040;
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #cc0066;
+    background-color: $color;
     border-radius: 2%;
     //position: fixed;
   }
@@ -122,9 +122,34 @@ $color: #800040;
     @include card-general;
     img{
       float: left;
+      height: 100px;
     }
     p{
       text-align: right;
+    }
+  }
+  .card-img-projet{
+    @include card-general;
+    div{
+      width: 100%;
+      img{
+        height: 400px;
+
+      }
+    }
+  }
+  #projets{
+    div{
+      border: 1px solid $color;
+      width: 300px;
+      height: 300px;
+      padding: 2px;
+      text-align: center;
+      display: flex;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
   }
   /* Right column */

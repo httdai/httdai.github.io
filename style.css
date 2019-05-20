@@ -1,6 +1,5 @@
 body {
   font-family: Courier Prime Regular;
-  background-image: url("image_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -44,7 +43,7 @@ body {
 }
 .container .topnav {
   overflow: hidden;
-  background-color: #cc0066;
+  background-color: #800040;
   border-radius: 2%;
 }
 .container .topnav a {
@@ -119,9 +118,34 @@ body {
 }
 .container .card img {
   float: left;
+  height: 100px;
 }
 .container .card p {
   text-align: right;
+}
+.container .card-img-projet {
+  background-color: white;
+  padding: 5%;
+  margin-top: 20px;
+  text-align: center;
+}
+.container .card-img-projet div {
+  width: 100%;
+}
+.container .card-img-projet div img {
+  height: 400px;
+}
+.container #projets div {
+  border: 1px solid #800040;
+  width: 300px;
+  height: 300px;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+}
+.container #projets div img {
+  width: 100%;
+  height: auto;
 }
 .container .rightcolumn {
   float: left;

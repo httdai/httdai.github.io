@@ -1,0 +1,222 @@
+$color: #800040;
+body {
+  background: $color;
+  font-size: 18px;
+  font-family: serif ;
+}
+@mixin card-general{
+  background-color: white;
+  text-align: center;
+  margin: 1%;
+  width: 100%;
+  padding: 1%;
+}
+/*!* Style the navbar *!
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+!* Navbar links *!
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+!* Page content *!
+.content {
+  padding: 16px;
+}
+
+!* The sticky class is added to the navbar with JS when it reaches its scroll position *!
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+!* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) *!
+.sticky + .content {
+  padding-top: 60px;
+}*/
+
+
+header{
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  padding: 10% 10% 1% 10%;
+  div{
+    position: absolute;
+    }
+  h1{
+    font-size: 2em;
+  }
+}
+/* Style the top navigation bar */
+.nav-header {
+  overflow: hidden;
+  background-color: $color;
+  position: fixed;
+  width: 94%;
+  z-index: 2;
+}
+/*.hiddendiv.common{
+  width: 100% !important;
+}*/
+/* Style the topnav links */
+.nav-header a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+}
+/* Change color on hover */
+.nav-header a:hover {
+  background-color: black;
+}
+.card-general {
+  @include card-general;
+  .title{
+    font-size: 4em;
+    color: $color;
+    margin: 1%;
+    padding-top: 3%;
+  }
+  .profile{
+
+    display: flex;
+    .img-profile{
+      padding: 0% 5% 5% 5%;
+      .avatar {
+        vertical-align: middle;
+        height: 400px;
+        border-radius: 50%;
+      }
+    }
+    .text-profile{
+      padding: 2% 8% 5% 8%;
+      font-size: 1.8em;
+      text-align: left;
+      font-family: cursive;
+    }
+   }
+
+  .cv{
+    background-color: $color;
+    padding: 1%;
+    font-size: 0.7em;
+    width: 70%;
+    margin: 10% 0 0 15%;
+    text-align: center;
+    font-family: serif;
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      background-color: black;
+    }
+  }
+  .img-logo{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .contact{
+    //display: flex;
+    padding: 1%;
+    //.right-contact{
+    //  width: 40%;
+    //  border: 1px solid $color;
+    //  //border-radius: 5%;
+    //  padding: 1%;
+    //  img{
+    //    width: 30%;
+    //    height: auto;
+    //  }
+    //}
+    /*.left-contact{
+      width: 160%;
+      padding: 1%;
+    }*/
+  }
+
+
+  .row{
+    img{
+      height: 250px;
+      width: auto;
+    }
+  }
+  .card-action{
+    //background: black;
+    a{
+      color:$color !important;
+    }
+  }
+  .card-img{
+    width: auto;
+    height: 250px;
+  }
+
+  /* $$$$$$$$$$$$$$$$$$$$$$  Contact $$$$$$$$$$$$$$$$$$$$$$  */
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: $color;
+  }
+  /* label focus color */
+  .input-field input[type=email]:focus + label {
+    color: $color;
+  }
+  /* label focus color */
+  .input-field textarea:focus + label {
+    color: $color;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* label underline focus color */
+  .input-field textarea:focus {
+    border-bottom: 1px solid $color;
+    box-shadow: 0 1px 0 0 $color;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: $color;
+  }
+  /* send color */
+  .send{
+    background-color: $color;
+    color: white;
+    border-width: 0 0 0 0;
+    padding: 1% 2%;
+    margin-bottom: 2%;
+  }
+
+}
+
+
+
+
+
+
+

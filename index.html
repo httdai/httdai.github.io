@@ -6,14 +6,31 @@
     <meta name="keywords" content="HTML,CSS,Materialize">
     <meta name="author" content="HUYNH">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel ="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel ="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MT7ZPPD');</script>
+    <!-- End Google Tag Manager -->
 </head>
-<body>
+<body id="particles-js">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT7ZPPD"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="particles.js"></script>
 <div class="container">
     <header>
         <div class="header">
@@ -21,119 +38,165 @@
             <p>Développeur front-end</p>
         </div>
         <div class="topnav">
-            <a href="#">Profile</a>
-            <a href="#">Expérience</a>
-            <a href="#">Compétence</a>
+            <a onclick = "myFunction()">Profile</a>
+            <a onclick = "myFunction()">Expériences</a>
+            <a href="#">Compétences</a>
             <a href="#">Formation</a>
-            <a href="#" style="float:right">Contact</a>
+            <a onclick = "myFunction()" style="float:right">Contact</a>
         </div>
+        <!--<script>
+            function myFunction1() {
+                var elmnt = document.getElementById("contact");
+                elmnt.scrollIntoView();
+            }
+        </script>-->
     </header>
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
                 <h2>Profile</h2>
-                <div class="fakeimg"><img class="avatar" src="thi-trang-dai.hyunh.jpg" alt="huynh"></div>
+                <div class="fakeimg"><img class="avatar" src="thi-trang-dai.huynh.jpg" alt="huynh"></div>
                 <p>Nom et prénom: <b>HUYNH Thi Trang Dai</b></p>
                 <p>Date de naissance: <b>Janvier 1983</b></p>
                 <p>Titre: <b>Développeur Front-end</b></p>
-                <p>Naturalisation <b>française</b></p>
+                <p><b>Naturalisation française</b></p>
                 <p>Adresse: <b>Paris, France</b></p>
                 <div class="cv"><a  href ="image/CV-HUYNH.pdf" download="CV">Mon CV</a></div>
             </div>
 
-            <div class="card">
-                <h2>Expérience</h2>
-
+           <!-- <div class="card">
+                <h2>Expériences</h2>
                 <div class="fakeimg">
-                    <img src="image/logo-coding-academy.png" alt="coding academy" height="100"></div>
+                    <img src="image/logo-coding-academy.png" alt="coding academy" ></div>
                 <p>02/2019 - 06/2019</p>
                 <p>Développeur Front-end</p>
                 <p>Coding Academy by Epitech</p>
 
+
                 <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" height="100"></div>
+                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
                 <p>2016 - 2017</p>
                 <p>Ingénieur de recherche</p>
                 <p>Université d'Orléans, France</p>
                 <p>Des projets d'analyse de résultats </p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" height="100"></div>
+                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
                 <p>2010 - 2014</p>
                 <p>Doctorat en Energétique</p>
                 <p>Université d'Orléans, France</p>
                 <p>Des projets d'analyse de résultats </p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Can Tho" height="100"></div>
+                    <img src="image/logo-ctu.png" alt="université de Can Tho" ></div>
                 <p>2005 - 2010</p>
                 <p>Enseignante - chercheur en Physique</p>
                 <p>Université de Can Tho, Viet Nam</p>
                 <p>Des projets de modélisation des phénomènes de physique par le langage Matlab </p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Cantho" height="100"></div>
+                    <img src="image/logo-ctu.png" alt="université de Cantho" ></div>
                 <p>2001 - 2005</p>
                 <p>Etudiante - Université de Can Tho - Viet nam</p>
                 <p>Base de mathématique</p>
                 <p>Suivi des projets de phénomène de Physique par <b>Pascal</b></p>
-            </div>
+            </div>-->
 
             <div class="card">
                 <h2>Formation</h2>
 
                 <div class="fakeimg">
-                    <img src="image/logo-coding-academy.png" alt="coding academy" height="100"></div>
+                    <img src="image/logo-coding-academy.png" alt="coding academy" ></div>
                 <p>02/2019 - 06/2019</p>
                 <p>Développeur Front-end</p>
                 <p>Coding Academy by Epitech</p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" height="100"></div>
+                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
                 <p>2010 - 2014</p>
                 <p>Doctorat en Energétique</p>
-                <p>Université d'Orléans, Francd</p>
+                <p>Université d'Orléans, France</p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Can Tho" height="100"></div>
+                    <img src="image/logo-ctu.png" alt="université de Can Tho" ></div>
                 <p>2008 - 2010</p>
                 <p>Master M2 en Physique</p>
                 <p>Université de Can Tho, Viet Nam</p>
 
                 <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Cantho" height="100"></div>
+                    <img src="image/logo-ctu.png" alt="université de Cantho" ></div>
                 <p>2001 - 2005</p>
                 <p>Master M1 en Physique et Mathématique</p>
                 <p>Université de Can Tho, Viet Nam</p>
             </div>
+            <div class="card" id="projets">
+                <h2>Les projets réalisés</h2>
+
+                <div class="projet-1"><img class="img-projet" src="img-projets/projet-HTML.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-materialize.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-materialize2.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-accessibility.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-animation.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-my-snapchat.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-animation-GSAP.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-sass-less.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-sass-less2.png" alt="projet-HTML-HUYNH" ></div>
+                <div><img class="img-projet" src="img-projets/projet-jquery.png" alt="projet-HTML-HUYNH" ></div>
+
+                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
+                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
+                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
+                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
+
+            </div>
             <div class="card">
+                <h2>Les technologies utilisés</h2>
+
+                <div><img class="img-projet" src="image/logo-html.png" alt="logo-HTML" ></div>
+                <div><img class="img-projet" src="image/logo-css3.svg" alt="logo-css3" ></div>
+                <div><img class="img-projet" src="image/logo-js.png" alt="logo-javascript" ></div>
+                <div><img class="img-projet" src="image/logo-angular.png" alt="logo-angular" ></div>
+                <div><img class="img-projet" src="image/logo-php.png" alt="logo-PHP" ></div>
+                <div><img class="img-projet" src="image/logo-sass.svg" alt="logo-SASS" ></div>
+                <div><img class="img-projet" src="image/logo-photoshop.jpg" alt="logo-photoshop" ></div>
+                <div><img class="img-projet" src="image/logo-C.jpg" alt="logo-C" ></div>
+                <div><img class="img-projet" src="image/logo-Matlab.png" alt="logo-Matlab" ></div>
+                <div><img class="img-projet" src="image/logo-materialize.png" alt="logo-materialize" ></div>
+                <div><img class="img-projet" src="image/logo-git.png" alt="logo-git" ></div>
+                <div><img class="img-projet" src="image/logo-jquery.jpg" alt="logo-jquery" ></div>
+                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
+                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
+                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
+                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
+
+            </div>
+            <div class="card" id="contact">
                 <h2>Contact</h2>
                 <div class="row">
                     <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST">
                             <div class="input-field col s6" >
                                 <i class="material-icons prefix text-black">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" name="name">
+                                <input id="icon_prefix" type="text" class="validate" name="name" required>
                                 <label for="icon_prefix"> Votre nom</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">mail</i>
-                                <input id="email" type="email" class="validate" name="email">
+                                <input id="email" type="email" class="validate" name="email" required>
                                 <label for="email">Votre Email</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea" name="sujet"></textarea>
+                                <textarea id="icon_prefix2" class="materialize-textarea" name="sujet" required></textarea>
                                 <label for="icon_prefix2">Votre sujet</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">message</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+                                <textarea id="icon_prefix2" class="materialize-textarea" name="message" required></textarea>
                                 <label for="icon_prefix2">Votre message</label>
                             </div>
                             <input class="send" type="submit" value="Envoyer">
                     </form>
                 </div>
-
             </div>
         </div>
 
@@ -170,3 +233,5 @@
 </div>
 </body>
 </html>
+
+
