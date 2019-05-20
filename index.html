@@ -178,7 +178,7 @@
             <div class="card" id="contact">
                 <h2>Contact</h2>
                 <div class="row">
-                    <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST">
+                    <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST" onsubmit="myFunction();">
                             <div class="input-field col s6" >
                                 <i class="material-icons prefix text-black">account_circle</i>
                                 <input id="icon_prefix" type="text" class="validate" name="name" required>
@@ -201,6 +201,19 @@
                             </div>
                             <input class="send" type="submit" value="Envoyer">
                     </form>
+                    <script>
+                        // quand le formulaire est envoyé WESH !!!
+                       function myFunction(){
+                           dataLayer.push({
+                               'event': 'santianoEvent',
+                               'eventCategory': 'Utilisateur',
+                               'eventAction': 'Formulaire de contact',
+                               'eventLabel': 'Message envoyé',
+                               'eventValue': '1'
+                           })
+                       }
+                        
+                    </script>
                 </div>
             </div>
         </div>

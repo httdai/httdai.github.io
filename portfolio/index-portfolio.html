@@ -240,6 +240,16 @@
                             </div>
                             <input class="send" type="submit" value="Envoyer">
                         </form>
+                        <script>
+                            // quand le formulaire est envoyé WESH !!!
+                            dataLayer.push({
+                                'event': 'santianoEvent',
+                                'eventCategory': 'Utilisateur',
+                                'eventAction': 'Formulaire de contact',
+                                'eventLabel': 'Message envoyé',
+                                'eventValue': '1'
+                            })
+                        </script>
                     </div>
 
                 </div>
