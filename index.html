@@ -7,15 +7,10 @@
     <meta name="author" content="HUYNH">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <link rel ="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
+    <link rel ="stylesheet" href="sass-js/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
 
     <script>
         dataLayer = [{}];
@@ -29,227 +24,322 @@
     })(window,document,'script','dataLayer','GTM-MT7ZPPD');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body id="particles-js">
-
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT7ZPPD"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<script src="particles.js"></script>
+
 <div class="container">
-    <header>
-        <div class="header">
-            <h1>HUYNH Thi Trang Dai</h1>
-            <p>Développeur front-end</p>
+
+    <nav class="nav-header">
+        <a href="#">Profile</a>
+        <a href="#">Expériences</a>
+        <a href="#">Compétences</a>
+        <a href="#">Formation</a>
+        <a href="#">Contact</a>
+    </nav>
+    <header id="particles-js">
+        <div>
+            <h1>Thi Trang Dai HUYNH</h1>
+            <p>Développeuse front-end</p>
         </div>
-        <div class="topnav">
-            <a onclick = "myFunction()">Profile</a>
-            <a onclick = "myFunction()">Expériences</a>
-            <a href="#">Compétences</a>
-            <a href="#">Formation</a>
-            <a onclick = "myFunction()" style="float:right">Contact</a>
-        </div>
-        <!--<script>
-            function myFunction1() {
-                var elmnt = document.getElementById("contact");
-                elmnt.scrollIntoView();
-            }
-        </script>-->
     </header>
-    <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-                <h2>Profile</h2>
-                <div class="fakeimg"><img class="avatar" src="thi-trang-dai.huynh.jpg" alt="huynh"></div>
-                <p>Nom et prénom: <b>HUYNH Thi Trang Dai</b></p>
-                <p>Date de naissance: <b>Janvier 1983</b></p>
-                <p>Titre: <b>Développeur Front-end</b></p>
-                <p><b>Naturalisation française</b></p>
-                <p>Adresse: <b>Paris, France</b></p>
-                <div class="cv"><a  href ="image/CV-HUYNH.pdf" download="CV">Mon CV</a></div>
+
+    <main>
+        <!--<div id="navbar">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">News</a>
+            <a href="javascript:void(0)">Contact</a>
+        </div>-->
+        <div class="card-general">
+            <p class="title">Profile</p>
+            <div class="profile">
+                <div class="img-profile"><img class="avatar" src="thi-trang-dai.huynh.jpg" alt="huynh"></div>
+                <div class="text-profile">
+                    <p>Vietnamienne, passionnée par les sciences et techniques, le code m'a toujours attirée et aujoud'hui,
+                        je suis heureuse de pouvoir m'adonner à cette passion</p>
+                    <div class="cv"><a href ="image/CV-HUYNH.pdf" download="CV">Télécharger mon CV</a></div>
+                </div>
+            </div>
+            <marquee direction="left" style = "font-size: x-large"> J'aime <strong style="color: dodgerblue">le développement web </strong>,
+                j'aime <strong style="color: darkslateblue"> faire du CSS avec SASS</strong>,
+                j'aime <strong style="color: darkblue">concevoir du site en responsive design </strong>,
+                j'aime <strong style="color: darkorchid">créer des applications mobile</strong>,
+                j'aime <strong style="color: deepskyblue">rire</strong>,
+                j'aime <strong style="color: darkslateblue">voyager</strong>.
+                </marquee>
+        </div>
+        <div class="card-general">
+            <p class="title">Parcours</p>
+            <div class="formation">
+                <div id="dev" class="tabcontent">
+                    <a class="nom-formation">Développeuse Web front-end</a>
+                    <p>Coding Academy by Epitech</p>
+                    <ul>
+                        <li>Développement front-end sur angular dans le cadre des projets de la my-spotify. </li>
+                        <li>Responsive design</li>
+                        <li>Méthodologie agile scrum</li>
+                        <li>Veille graphique et technologique quotidienne</li>
+                        <li>Versioning avec Git</li>
+
+                        <li>Technologies et outils utilisés: HTML5, CSS3 (SASS), Javascript, angular, PHP, Materialize </li>
+                    </ul>
+                </div>
+
+                <div id="post-doc" class="tabcontent">
+                    <a class="nom-formation">Ingénieur de Rechercher </a>
+                    <p>GREMI - CNRS/Université d'orléans</p>
+                </div>
+
+                <div id="doctorat" class="tabcontent">
+                    <a class="nom-formation">Doctorante en énergétique</a>
+                    <p>GREMI - CNRS/Université d'orléans</p>
+                </div>
+
+                <div id="enseignante" class="tabcontent">
+                    <a class="nom-formation">Enseignante-chercheur en Physique</a>
+                    <p>Université de Can Tho, Viet Nam</p>
+                </div>
+
+                <div id="etudiant" class="tabcontent">
+                    <a class="nom-formation">Ingénieur en Physique</a>
+                    <p>Université de Can Tho, Viet Nam</p>
+                </div>
+
+                <button class="tablink" onclick="openCity('dev', this, '#a30152')" id="defaultOpen">02/2019</button>
+                <button class="tablink" onclick="openCity('post-doc', this, '#c10060')">2016 - 2017</button>
+                <button class="tablink" onclick="openCity('doctorat', this, '#7a1949')">2010 - 2014</button>
+                <button class="tablink" onclick="openCity('enseignante', this, '#56082f')">2005 -2010</button>
+                <button class="tablink" onclick="openCity('etudiant', this, '#591537')">2001 -2005</button>
+                <p> <- - - - - - -></p>
             </div>
 
-           <!-- <div class="card">
-                <h2>Expériences</h2>
-                <div class="fakeimg">
-                    <img src="image/logo-coding-academy.png" alt="coding academy" ></div>
-                <p>02/2019 - 06/2019</p>
-                <p>Développeur Front-end</p>
-                <p>Coding Academy by Epitech</p>
+            <script>
+                function openCity(cityName,elmnt,color) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].style.backgroundColor = "";
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    elmnt.style.backgroundColor = color;
 
+                }
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+        <div class="card-general">
+            <p class="title">Compétences</p>
 
-                <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
-                <p>2016 - 2017</p>
-                <p>Ingénieur de recherche</p>
-                <p>Université d'Orléans, France</p>
-                <p>Des projets d'analyse de résultats </p>
+        </div>
+        <div class="card-general">
+            <p class="title">Technologies</p>
+           <!-- <div class="row">
+                <div class="col s14 m16" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-logo" src="image/logo-html.png" alt="logo-HTML" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col s14 m16" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-logo" src="image/logo-css3.svg" alt="logo-css3" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col s14 m16" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-logo" src="image/logo-js.png" alt="logo-javascript" >
+                        </div>
+                    </div>
+                </div>
 
-                <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
-                <p>2010 - 2014</p>
-                <p>Doctorat en Energétique</p>
-                <p>Université d'Orléans, France</p>
-                <p>Des projets d'analyse de résultats </p>
-
-                <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Can Tho" ></div>
-                <p>2005 - 2010</p>
-                <p>Enseignante - chercheur en Physique</p>
-                <p>Université de Can Tho, Viet Nam</p>
-                <p>Des projets de modélisation des phénomènes de physique par le langage Matlab </p>
-
-                <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Cantho" ></div>
-                <p>2001 - 2005</p>
-                <p>Etudiante - Université de Can Tho - Viet nam</p>
-                <p>Base de mathématique</p>
-                <p>Suivi des projets de phénomène de Physique par <b>Pascal</b></p>
             </div>-->
+            <!--<div><img class="img-logo" src="image/logo-html.png" alt="logo-HTML" ></div>
+            <div><img class="img-logo" src="image/logo-css3.svg" alt="logo-css3" ></div>
+            <div><img class="img-logo" src="image/logo-js.png" alt="logo-javascript" ></div>
+            <div><img class="img-logo" src="image/logo-angular.png" alt="logo-angular" ></div>
+            <div><img class="img-logo" src="image/logo-php.png" alt="logo-PHP" ></div>
+            <div><img class="img-logo" src="image/logo-sass.svg" alt="logo-SASS" ></div>
+            <div><img class="img-logo" src="image/logo-photoshop.jpg" alt="logo-photoshop" ></div>
+            <div><img class="img-logo" src="image/logo-C.jpg" alt="logo-C" ></div>
+            <div><img class="img-logo" src="image/logo-Matlab.png" alt="logo-Matlab" ></div>
+            <div><img class="img-logo" src="image/logo-materialize.png" alt="logo-materialize" ></div>
+            <div><img class="img-logo" src="image/logo-git.png" alt="logo-git" ></div>
+            <div><img class="img-logo" src="image/logo-jquery.jpg" alt="logo-jquery" ></div>-->
+        </div>
 
-            <div class="card">
-                <h2>Formation</h2>
+        <div class="card-general">
+            <p class="title">Mes projets</p>
+            <div class="row">
+                <div class="col s14 m4" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-accessibility.png">
+                        </div>
 
-                <div class="fakeimg">
-                    <img src="image/logo-coding-academy.png" alt="coding academy" ></div>
-                <p>02/2019 - 06/2019</p>
-                <p>Développeur Front-end</p>
-                <p>Coding Academy by Epitech</p>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-HTML.png">
+                        </div>
 
-                <div class="fakeimg">
-                    <img src="image/logo-orleans.png" alt="université d'Orléans" ></div>
-                <p>2010 - 2014</p>
-                <p>Doctorat en Energétique</p>
-                <p>Université d'Orléans, France</p>
-
-                <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Can Tho" ></div>
-                <p>2008 - 2010</p>
-                <p>Master M2 en Physique</p>
-                <p>Université de Can Tho, Viet Nam</p>
-
-                <div class="fakeimg">
-                    <img src="image/logo-ctu.png" alt="université de Cantho" ></div>
-                <p>2001 - 2005</p>
-                <p>Master M1 en Physique et Mathématique</p>
-                <p>Université de Can Tho, Viet Nam</p>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" style="padding-right: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-animation-GSAP.png">
+                        </div>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card" id="projets">
-                <h2>Les projets réalisés</h2>
+            <div class="row">
+                <div class="col s14 m4" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-animation.png">
+                        </div>
 
-                <div class="projet-1"><img class="img-projet" src="img-projets/projet-HTML.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-materialize.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-materialize2.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-accessibility.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-animation.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-my-snapchat.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-animation-GSAP.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-sass-less.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-sass-less2.png" alt="projet-HTML-HUYNH" ></div>
-                <div><img class="img-projet" src="img-projets/projet-jquery.png" alt="projet-HTML-HUYNH" ></div>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-Jquery.png">
+                        </div>
 
-                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
-                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
-                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
-                <p>jhfhfhffgjgjgjjgjkfkgjkj</p>
-
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" style="padding-right: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-materialize.png">
+                        </div>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h2>Les technologies utilisés</h2>
 
-                <div><img class="img-projet" src="image/logo-html.png" alt="logo-HTML" ></div>
-                <div><img class="img-projet" src="image/logo-css3.svg" alt="logo-css3" ></div>
-                <div><img class="img-projet" src="image/logo-js.png" alt="logo-javascript" ></div>
-                <div><img class="img-projet" src="image/logo-angular.png" alt="logo-angular" ></div>
-                <div><img class="img-projet" src="image/logo-php.png" alt="logo-PHP" ></div>
-                <div><img class="img-projet" src="image/logo-sass.svg" alt="logo-SASS" ></div>
-                <div><img class="img-projet" src="image/logo-photoshop.jpg" alt="logo-photoshop" ></div>
-                <div><img class="img-projet" src="image/logo-C.jpg" alt="logo-C" ></div>
-                <div><img class="img-projet" src="image/logo-Matlab.png" alt="logo-Matlab" ></div>
-                <div><img class="img-projet" src="image/logo-materialize.png" alt="logo-materialize" ></div>
-                <div><img class="img-projet" src="image/logo-git.png" alt="logo-git" ></div>
-                <div><img class="img-projet" src="image/logo-jquery.jpg" alt="logo-jquery" ></div>
-                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
-                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
-                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
-                <!--<p>jhfhfhffgjgjgjjgjkfkgjkj</p>-->
+            <div class="row">
+                <div class="col s14 m4" style="padding-left: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-materialize2.png">
+                        </div>
 
-            </div>
-            <div class="card" id="contact">
-                <h2>Contact</h2>
-                <div class="row">
-                    <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST" onsubmit="myFunction();">
-                            <div class="input-field col s6" >
-                                <i class="material-icons prefix text-black">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" name="name" required>
-                                <label for="icon_prefix"> Votre nom</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <i class="material-icons prefix">mail</i>
-                                <input id="email" type="email" class="validate" name="email" required>
-                                <label for="email">Votre Email</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea" name="sujet" required></textarea>
-                                <label for="icon_prefix2">Votre sujet</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">message</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea" name="message" required></textarea>
-                                <label for="icon_prefix2">Votre message</label>
-                            </div>
-                            <input class="send" type="submit" value="Envoyer">
-                    </form>
-                    <script>
-                        // quand le formulaire est envoyé WESH !!!
-                       function myFunction(){
-                           dataLayer.push({
-                               'event': 'santianoEvent',
-                               'eventCategory': 'Utilisateur',
-                               'eventAction': 'Formulaire de contact',
-                               'eventLabel': 'Message envoyé',
-                               'eventValue': '1'
-                           })
-                       }
-                        
-                    </script>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-my-snapchat.png">
+                        </div>
+
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" style="padding-right: 0">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-projets/projet-sass-less.png">
+                        </div>
+                        <div class="card-action">
+                            <a href="#">En savoir +</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="card-general">
+            <p class="title">Contactez-moi</p>
+            <div class="contact">
+                <div class="left-contact">
+                    <form class="col s12" action="https://formspree.io/httdai@gmail.com" method="POST">
+                        <div class="input-field col s6" >
+                            <i class="material-icons prefix text-black">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" name="name" required>
+                            <label for="icon_prefix"> Votre nom</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate" name="email" required>
+                            <label for="email">Votre Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea" name="sujet" required></textarea>
+                            <label for="icon_prefix2">Votre sujet</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea" name="message" required></textarea>
+                            <label for="icon_prefix2">Votre message</label>
+                        </div>
+                        <input class="send" type="submit" value="Envoyer">
+                    </form>
+                    <script>
+                        // quand le formulaire est envoyé WESH !!!
+                        dataLayer.push({
+                            'event': 'santianoEvent',
+                            'eventCategory': 'Utilisateur',
+                            'eventAction': 'Formulaire de contact',
+                            'eventLabel': 'Message envoyé',
+                            'eventValue': '1'
+                        })
+                    </script>
+                </div>
 
-        <div class="rightcolumn">
-            <div class="card-right-present">
-                <h2>Qui suis-je?</h2>
-                <p><b>HUYNH Thi Trang Dai</b></p>
-                <p>Développeur Front-end</p>
-                <div>
-                    <img src="image/logo-coding-academy.png" alt="coding academy"></div>
-            </div>
-
-            <div class="card-right-contact">
-                <a>Contactez-moi</a>
-                <div class="fakeimg"><p>HUYNH Thi Trang Dai</p></div>
-                <div class="fakeimg"><img src="image/icons-mail.png" alt="email">
-                    <p>httdai@gmail.com</p></div>
-                <div class="fakeimg"><img src="image/icons8-phone-50.png" alt="telephone">
-                    <p>06.05.93.21.29</p></div>
             </div>
         </div>
-    </div>
-
-
-    <div class="topnav">
-        <a href="#">Profile</a>
-        <a href="#">Expérience</a>
-        <a href="#">Compétence</a>
-        <a href="#">Formation</a>
-        <a href="#" style="float:right">Contact</a>
-    </div>
-
+    </main>
+    <!--<footer>
+        <div class="contact">
+            <a>Qui suis-je?</a>
+            <p><b>HUYNH Thi Trang Dai</b></p>
+            <p>Développeuse Front-end</p>
+            <div>
+                <img src="image/logo-coding-academy.png" alt="coding academy"></div>
+            <div class="fakeimg"><p>httdai@gmail.com</p></div>
+        </div>
+    </footer>-->
 </div>
 </body>
+
+<script src="sass-js/particles.js"></script>
+<script src="sass-js/script.js"></script>
 </html>
-
-

@@ -5,43 +5,26 @@ body {
   font-family: serif ;
 }
 @mixin card-general{
-  background-color: white;
+  background-color: gainsboro;
   text-align: center;
   margin: 1%;
   width: 100%;
   padding: 1%;
 }
-/*!* Style the navbar *!
-#navbar {
-  overflow: hidden;
-  background-color: #333;
+@mixin title{
+
+    font-size: 4em;
+    color: $color;
+    margin: 1%;
+    padding-top: 3%;
+  font-family: cursive,Lora,Georgia,serif;
+
+}
+.container{
+  max-width: 1280px;
+  margin: auto;
 }
 
-!* Navbar links *!
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-!* Page content *!
-.content {
-  padding: 16px;
-}
-
-!* The sticky class is added to the navbar with JS when it reaches its scroll position *!
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-!* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) *!
-.sticky + .content {
-  padding-top: 60px;
-}*/
 
 
 header{
@@ -62,8 +45,8 @@ header{
   overflow: hidden;
   background-color: $color;
   position: fixed;
-  width: 94%;
-  z-index: 2;
+  width: 100%;
+  z-index: 1;
 }
 /*.hiddendiv.common{
   width: 100% !important;
@@ -81,34 +64,37 @@ header{
 .nav-header a:hover {
   background-color: black;
 }
+
 .card-general {
   @include card-general;
-  .title{
-    font-size: 4em;
-    color: $color;
-    margin: 1%;
-    padding-top: 3%;
+
+  .title {
+    @include title
   }
-  .profile{
+
+  .profile {
 
     display: flex;
-    .img-profile{
+
+    .img-profile {
       padding: 0% 5% 5% 5%;
+
       .avatar {
         vertical-align: middle;
         height: 400px;
         border-radius: 50%;
       }
     }
-    .text-profile{
+
+    .text-profile {
       padding: 2% 8% 5% 8%;
       font-size: 1.8em;
       text-align: left;
       font-family: cursive;
     }
-   }
+  }
 
-  .cv{
+  .cv {
     background-color: $color;
     padding: 1%;
     font-size: 0.7em;
@@ -117,42 +103,50 @@ header{
     text-align: center;
     font-family: serif;
 
-    a{
+    a {
       color: white;
       text-decoration: none;
     }
+
     a:hover {
       background-color: black;
     }
   }
-  .img-logo{
+
+  .img-logo {
     width: 20%;
     height: 20%;
     display: flex;
-    img{
+
+    img {
       width: 100%;
       height: auto;
     }
   }
-  .contact{
-    //display: flex;
+
+  .contact {
+
     padding: 1%;
-    //.right-contact{
-    //  width: 40%;
-    //  border: 1px solid $color;
-    //  //border-radius: 5%;
-    //  padding: 1%;
-    //  img{
-    //    width: 30%;
-    //    height: auto;
-    //  }
-    //}
-    /*.left-contact{
-      width: 160%;
-      padding: 1%;
-    }*/
+
   }
 
+  /*.card {
+    width: 200px;
+    height: 220px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    vertical-align:top;
+  }
+  .card-image {
+    width: 200px;
+    height: 150px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }*/
 
   .row{
     img{
@@ -170,7 +164,6 @@ header{
     width: auto;
     height: 250px;
   }
-
   /* $$$$$$$$$$$$$$$$$$$$$$  Contact $$$$$$$$$$$$$$$$$$$$$$  */
   /* label focus color */
   .input-field input[type=text]:focus + label {
@@ -213,9 +206,89 @@ header{
   }
 
 }
+/* $$$$$$$$$$$$$$$$   formation $$$$$$$$$$$$ */
+.card-general {
+  @include card-general;
 
+  .title {
+    @include title
+  }
+  .formation{
+    width: 100%;
+    height: auto;
+  }
+  ul{
+    text-align: left;
+    padding: 2%;
+  }
+  .nom-formation{
+    color: black;
+    font-size: 2em;
+  }
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0px;
+    font-size: 17px;
+    width: 20%;
+  }
 
+  .tablink:hover {
+    background-color: #777;
+  }
 
+  /* Style the tab content */
+  .tabcontent {
+    color: white;
+    //display: none;
+    padding: 50px;
+    text-align: center;
+  }
+}
+
+#dev {background-color:#a30152;}
+#post-doc {background-color:#c10060;}
+#doctorat {background-color:#7a1949;}
+#enseignante {background-color:#56082f;}
+#etudiant {background-color:#591537;}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/*!* Style the navbar *!
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+!* Navbar links *!
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+!* Page content *!
+.content {
+  padding: 16px;
+}
+
+!* The sticky class is added to the navbar with JS when it reaches its scroll position *!
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+!* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) *!
+.sticky + .content {
+  padding-top: 60px;
+}*/
 
 
 
