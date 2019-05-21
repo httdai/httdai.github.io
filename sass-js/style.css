@@ -5,22 +5,26 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-widthwidth: 1280px;
   margin: auto;
 }
 
 header {
   color: white;
-  font-size: 3em;
   text-align: center;
   position: relative;
-  padding: 10% 10% 1% 10%;
+  padding: 1% 0;
 }
 header div {
   position: absolute;
+  padding: 15% 20% 15%;
 }
 header h1 {
-  font-size: 2em;
+  font-size: 4em;
+  text-align: center;
+}
+header p {
+  font-size: 1.8em;
 }
 
 /* Style the top navigation bar */
@@ -30,6 +34,7 @@ header h1 {
   position: fixed;
   width: 100%;
   z-index: 1;
+  font-size: 1.2em;
 }
 
 /*.hiddendiv.common{
@@ -198,6 +203,9 @@ header h1 {
   width: 100%;
   height: auto;
 }
+.card-general p {
+  color: black;
+}
 .card-general ul {
   text-align: left;
   padding: 2%;
@@ -208,7 +216,7 @@ header h1 {
 }
 .card-general .tablink {
   background-color: #555;
-  color: white;
+  color: gainsboro;
   float: left;
   border: none;
   outline: none;
@@ -221,9 +229,13 @@ header h1 {
   background-color: #777;
 }
 .card-general .tabcontent {
-  color: white;
+  color: gainsboro;
   padding: 50px;
   text-align: center;
+}
+
+.icon-formation {
+  display: flex;
 }
 
 #dev {

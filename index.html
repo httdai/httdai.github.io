@@ -30,16 +30,17 @@
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="container">
+<div class="contenu" >
 
-    <nav class="nav-header">
-        <a href="#">Profile</a>
-        <a href="#">Expériences</a>
-        <a href="#">Compétences</a>
-        <a href="#">Formation</a>
-        <a href="#">Contact</a>
-    </nav>
+
     <header id="particles-js">
+        <nav class="nav-header" id="menu">
+            <a data-scrollTo="profil" onclick="navScroll(event)">Profil</a>
+            <a data-scrollTo="parcours" onclick="navScroll(event)">Parcours</a>
+            <a data-scrollTo="competence" onclick="navScroll(event)">Compétences</a>
+            <a data-scrollTo="formation" onclick="navScroll(event)">Formation</a>
+            <a data-scrollTo="contact" onclick="navScroll(event)">Contact</a>
+        </nav>
         <div>
             <h1>Thi Trang Dai HUYNH</h1>
             <p>Développeuse front-end</p>
@@ -52,8 +53,8 @@
             <a href="javascript:void(0)">News</a>
             <a href="javascript:void(0)">Contact</a>
         </div>-->
-        <div class="card-general">
-            <p class="title">Profile</p>
+        <div class="card-general" id="profil">
+            <p class="title">Profil</p>
             <div class="profile">
                 <div class="img-profile"><img class="avatar" src="thi-trang-dai.huynh.jpg" alt="huynh"></div>
                 <div class="text-profile">
@@ -70,7 +71,7 @@
                 j'aime <strong style="color: darkslateblue">voyager</strong>.
                 </marquee>
         </div>
-        <div class="card-general">
+        <div class="card-general" id="parcours">
             <p class="title">Parcours</p>
             <div class="formation">
                 <div id="dev" class="tabcontent">
@@ -90,29 +91,54 @@
                 <div id="post-doc" class="tabcontent">
                     <a class="nom-formation">Ingénieur de Rechercher </a>
                     <p>GREMI - CNRS/Université d'orléans</p>
+                    <ul>
+                        <li>Analyse des données et modélisation par Matlab, COMSOL.</li>
+                        <li>Contrôle de l'équipement avec des logiciels spécialisés.</li>
+                        <li>Guide des étudiants, travail en équipe laser.</li>
+                        <li>Rédaction des rapports et des articles scientifiques.</li>
+                    </ul>
                 </div>
 
                 <div id="doctorat" class="tabcontent">
                     <a class="nom-formation">Doctorante en énergétique</a>
                     <p>GREMI - CNRS/Université d'orléans</p>
+                    <ul>
+                        <li>Analyse des données et modélisation par Matlab, COMSOL.</li>
+                        <li>Contrôle de l'équipement avec des logiciels spécialisés.</li>
+                        <li>Rédaction des rapports et des articles scientifiques.</li>
+                    </ul>
+
                 </div>
 
                 <div id="enseignante" class="tabcontent">
                     <a class="nom-formation">Enseignante-chercheur en Physique</a>
                     <p>Université de Can Tho, Viet Nam</p>
+                    <ul>
+                        <li>Base de mathématique: algèbre linéaire, statistique et probabilité.</li>
+                        <li>Modélisation des phénomènes de physique par Matlab.</li>
+                        <li>Rédaction des rapports et des articles scientifiques.</li>
+                    </ul>
                 </div>
 
                 <div id="etudiant" class="tabcontent">
                     <a class="nom-formation">Ingénieur en Physique</a>
                     <p>Université de Can Tho, Viet Nam</p>
+                    <ul>
+                        <li>Base de mathématique: algèbre linéaire, statistique et probabilité.</li>
+                        <li>Modélisation des phénomènes de physique par Pascal.</li>
+                    </ul>
+
+
                 </div>
 
-                <button class="tablink" onclick="openCity('dev', this, '#a30152')" id="defaultOpen">02/2019</button>
-                <button class="tablink" onclick="openCity('post-doc', this, '#c10060')">2016 - 2017</button>
-                <button class="tablink" onclick="openCity('doctorat', this, '#7a1949')">2010 - 2014</button>
-                <button class="tablink" onclick="openCity('enseignante', this, '#56082f')">2005 -2010</button>
-                <button class="tablink" onclick="openCity('etudiant', this, '#591537')">2001 -2005</button>
-                <p> <- - - - - - -></p>
+                <div class="icon-formation">
+                    <button class="tablink" onclick="openCity('dev', this, '#a30152')" id="defaultOpen">02/2019</button>
+                    <button class="tablink" onclick="openCity('post-doc', this, '#c10060')">2016 - 2017</button>
+                    <button class="tablink" onclick="openCity('doctorat', this, '#7a1949')">2010 - 2014</button>
+                    <button class="tablink" onclick="openCity('enseignante', this, '#56082f')">2005 -2010</button>
+                    <button class="tablink" onclick="openCity('etudiant', this, '#591537')">2001 -2005</button>
+                </div>
+               <!-- <p> <- - - - - - -></p>-->
             </div>
 
             <script>
@@ -134,7 +160,7 @@
                 document.getElementById("defaultOpen").click();
             </script>
         </div>
-        <div class="card-general">
+        <div class="card-general" id="competence">
             <p class="title">Compétences</p>
 
         </div>
@@ -178,7 +204,7 @@
             <div><img class="img-logo" src="image/logo-jquery.jpg" alt="logo-jquery" ></div>-->
         </div>
 
-        <div class="card-general">
+        <div class="card-general" id="projets">
             <p class="title">Mes projets</p>
             <div class="row">
                 <div class="col s14 m4" style="padding-left: 0">
@@ -285,7 +311,7 @@
             </div>
         </div>
 
-        <div class="card-general">
+        <div class="card-general" id="contact">
             <p class="title">Contactez-moi</p>
             <div class="contact">
                 <div class="left-contact">
